@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to : 'tasks#index'#トップページ設定
+  # get 'tasks/index'
+  root to: 'tasks#index'#トップページ設定
   resources :tasks #tasksControllerをまとめて設定
 end
 

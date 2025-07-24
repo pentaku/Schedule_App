@@ -11,6 +11,20 @@
   </head>
 
   <body>
+    <header>
+      <h1>Ruby on Rails</h1>
+
+    <% if flash[:notice] %>
+      <p class="notice">
+        <%= flash[:notice] %>
+      </p>
+    <% end %>
+
+    </header>
+
     <%= yield %>
+
+    <footer>
+    </footer>
   </body>
 </html>
